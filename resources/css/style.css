@@ -1,0 +1,128 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica;
+}
+.container{
+width: 960px;
+margin: 0 auto;
+}
+
+header{
+  padding-top: 0.5rem;
+height: 30rem;
+background-size: cover;
+background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+}
+.heading-container{
+  background-color: cadetblue;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+padding-left: 2rem;
+color: white;
+padding: 0.5rem;
+}
+.logo img{
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.menu li{
+display: inline;
+color: white;
+padding: 1rem;
+}
+.menu a{
+  color: white;
+}
+.motto{
+  height: 13rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.motto-inner{
+
+}
+.motto span{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  text-transform: uppercase;
+  position: relative;
+    left: 2rem;
+}
+.products{
+display: inline-flex;
+justify-content: space-around;
+width: 100%;
+margin: 5rem auto;
+
+}
+.product{
+display: flex;
+flex-direction: column;
+height: 5rem;
+text-align: center;
+width: 5rem;
+}
+.product img{
+  object-fit: contain;
+  height: inherit;
+  width: 3.5rem;
+}
+#ruler{
+  width: 5rem;
+}
+.texts-container{
+  display: inline-flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.text{
+display: flex;
+flex-direction: column;
+width: 35%;
+
+}
+.text-heading{
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
+  width: 10rem;
+  /*padding: 0.5rem auto 0.5rem 1.25rem;*/
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-body{
+margin-top: 1rem;
+}
+footer{
+background-color: azure;
+width:100%;
+padding: 4rem 4rem;
+font-size: 1rem;
+
+}
+.footer-logo{
+display: flex;
+align-items: center;
+}
+.footer-logo img{
+height: 1.2rem;
+padding-right: 1rem;
+}
