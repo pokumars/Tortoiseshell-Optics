@@ -3,6 +3,14 @@ html{
   line-height: 1.4;
   font-family: helvetica;
 }
+html,body
+{
+  /*  width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;*/
+    overflow-x: hidden;
+}
 .container{
 width: 960px;
 margin: 0 auto;
@@ -38,6 +46,9 @@ padding: 0.5rem;
   align-items: center;
   padding: 1rem;
 }
+.mobile-menu{
+  display: none;
+}
 .menu li{
 display: inline;
 color: white;
@@ -72,6 +83,7 @@ width: 100%;
 margin: 5rem auto;
 
 }
+
 .product{
 display: flex;
 flex-direction: column;
@@ -113,11 +125,14 @@ margin-top: 1rem;
 }
 footer{
 background-color: azure;
-width:100%;
+/*width:100%;*/
 padding: 4rem 4rem;
 font-size: 1rem;
-
 }
+.mobile-footer-logo{
+display: none;
+}
+
 .footer-logo{
 display: flex;
 align-items: center;
@@ -125,4 +140,120 @@ align-items: center;
 .footer-logo img{
 height: 1.2rem;
 padding-right: 1rem;
+}
+@media only screen and (max-width:960px){
+  .container{
+    width: 100%;
+  }
+  .heading-container{
+    margin: -0.5rem auto;
+  }
+  header{
+  padding-top: 0.5rem;
+  height: 22rem;
+  background-size: cover;
+  background-position-x: -11rem;
+  }
+
+  .motto{
+    height: 8rem;
+
+  }
+  .motto-inner{
+
+  }
+  .motto span{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    position: static;
+    margin-right: 2rem;
+    }
+
+}
+@media only screen and (max-width:650px) {
+  .mobile-menu{
+    display: block;
+  }
+  .menu{
+    display: none;
+  }
+
+  .mobile-menu li{
+  color: white;
+  padding: 1rem;
+  }
+  .mobile-menu a{
+    color: white;
+  }
+
+}
+/* SMALL SCREENS*/
+@media only screen and (max-width:470px){
+
+  header{
+  height: 17rem;
+  background-position: 20%;
+  }
+  .company-name{
+    display: none;
+  }
+  .products{
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem auto;
+  }
+  .product{
+    padding: 1.54rem;
+  }
+  .motto span{
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+  }
+  .text{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .texts-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-heading{
+    width:100%;
+  }
+  .text-body{
+    font-size: 0.77rem;
+    padding: 0 1rem;
+  }
+
+  .motto{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    top:6rem;
+  }
+  .motto-inner{
+    background-color: white;
+    padding: 1rem;
+    width: 90%;
+
+  }
+  .motto span{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    }
+    .footer-logo{
+      display: none;
+    }
+    .mobile-footer-logo{
+      display: flex;
+      align-items: center;
+    }
+    .mobile-footer-logo img{
+    height: 1.2rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    }
+
 }
