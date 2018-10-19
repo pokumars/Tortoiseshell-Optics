@@ -20,7 +20,7 @@ header{
   padding-top: 0.5rem;
 height: 30rem;
 background-size: cover;
-background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+background-image: url(../images/glasses-bg.png);
 }
 .heading-container{
   background-color: cadetblue;
